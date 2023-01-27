@@ -25,18 +25,18 @@ width="200"
 <img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%202.jpg" align="center"
 width="200"
     hspace="10" vspace="10">
-<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%203.jpg" align="left"
+<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%203.jpg" align="right"
 width="200"
     hspace="10" vspace="10">
 <br>
 <br>
-<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%204.jpg" align="center"
+<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%204.jpg" align="left"
 width="200"
     hspace="10" vspace="10">
-<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%205.jpg" align="left"
+<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%205.jpg" align="center"
 width="200"
     hspace="10" vspace="10">
-<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%206.jpg" align="center"
+<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%206.jpg" align="right"
 width="200"
     hspace="10" vspace="10">
 <br>
@@ -47,7 +47,7 @@ width="200"
 <img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%208.jpg" align="center"
 width="200"
     hspace="10" vspace="10">
-<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%209.jpg" align="left"
+<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%209.jpg" align="right"
 width="200"
     hspace="10" vspace="10">
 <br>
