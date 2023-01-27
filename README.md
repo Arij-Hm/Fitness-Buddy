@@ -19,7 +19,7 @@ The android app lets you:
 
 ## Screenshots
 
-[<img src="/readme/Wallabag%20Reading%20List.png" align="left"
+[<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%201.jpg" align="left"
 width="200"
     hspace="10" vspace="10">](/readme/Wallabag%20Reading%20List.png)
 [<img src="/readme/Wallabag%20Article%20View.png" align="center"
