@@ -19,10 +19,10 @@ The android app lets you:
 
 ## Screenshots
 
-<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%201.jpg" align="left"
+<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%201.jpg"
 width="200"
     hspace="10" vspace="10">
-<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%202.jpg" align="center"
+<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%202.jpg"
 width="200"
     hspace="10" vspace="10">
 <img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%203.jpg"
@@ -41,10 +41,10 @@ width="200"
     hspace="10" vspace="10">
 <br>
 <br>
-<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%207.jpg" align="left"
+<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%207.jpg"
 width="200"
     hspace="10" vspace="10">
-<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%208.jpg" align="center"
+<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%208.jpg"
 width="200"
     hspace="10" vspace="10">
 <img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%209.jpg" width="200" hspace="10" vspace="10">
