@@ -53,6 +53,10 @@ width="200"
 <br>
 <br>
 <br>
+
+
+
+
 ## Permissions
 
 On Android versions prior to Android 6.0, wallabag requires the following permissions:
