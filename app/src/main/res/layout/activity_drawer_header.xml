@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/nav_header"
+    android:background="@color/blueish"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".Drawer_Header">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/headerpic"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:focusable="auto"
+        android:src="@mipmap/profile"
+        android:visibility="visible"
+        app:civ_border_color="#AEABD8"
+        app:civ_border_width="2dp"
+        tools:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/lato"
+        android:text="My Fitness Buddy"
+        android:textAlignment="textStart"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="0.5"
+        android:fontFamily="@font/lato"
+        android:text="Welcome back!"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold" />-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blueish"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".Drawer_Header">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pic"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:focusable="auto"
+            android:src="@mipmap/ic_launcher_round"
+            android:visibility="visible"
+            app:civ_border_color="#AEABD8"
+            app:civ_border_width="2dp"
+            tools:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+          <!--  <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.5"
+                android:fontFamily="@font/lato"
+                android:text="Welcome back to"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/lato"
+                android:foregroundGravity="center|center_horizontal"
+                android:gravity="center|center_horizontal"
+                android:text="Fitness Buddy"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

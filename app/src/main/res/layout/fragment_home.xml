@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@android:style/Widget.Holo.Light.ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    android:id="@+id/swipeRefresh"
+    tools:actionBarNavMode="standard"
+    app:layout_scrollFlags="scroll"
+    tools:context=".HomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/cardView10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toTopOf="@+id/circularProgressBar"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imageView11"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.4"
+                            android:src="@drawable/ic_round_directions_run_24"
+                            app:srcCompat="@drawable/ic_round_directions_run_24" />
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="40dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/lato_italic"
+                            android:text="Steps"
+                            android:textColor="@color/blueish"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                        android:id="@+id/circularProgressBar"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="35dp"
+                        app:cpb_background_progressbar_color="#b6bbd8"
+                        app:cpb_background_progressbar_width="10dp"
+                        app:cpb_progress_direction="to_right"
+                        app:cpb_progressbar_color="@color/blueish"
+                        app:cpb_progressbar_width="15dp"
+                        app:cpb_round_border="false"
+                        app:layout_constraintBottom_toTopOf="@+id/Goal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+                    <TextView
+                        android:id="@+id/steps"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato_italic"
+                        android:text="0 Steps"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/circularProgressBar"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/circularProgressBar" />
+
+                    <TextView
+                        android:id="@+id/Goal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="279dp"
+                        android:fontFamily="@font/lato_italic"
+                        android:gravity="start"
+                        android:text="Your goal :"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/circularProgressBar" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="30dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/Goal">
+
+                        <EditText
+                            android:id="@+id/GoalVal"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="45dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="50dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:fontFamily="@font/lato_italic"
+                            android:hint="Set Goal"
+                            android:inputType="number"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:id="@+id/setGoal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="50dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/lato_italic"
+                            android:text="Set"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            app:cornerRadius="18dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/GoogleFitSteps"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/cardView8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CardView11">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.4"
+                            android:src="@drawable/ic_round_calculate_24"
+                            app:srcCompat="@drawable/ic_round_calculate_24" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/lato_italic"
+                            android:text="BMI Calculator"
+                            android:textColor="@color/blueish"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/BMIHeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_weight="0.8"
+                            android:ems="10"
+                            android:fontFamily="@font/lato_italic"
+                            android:hint="Enter Height"
+                            android:inputType="number"
+                            android:textAlignment="center"
+                            android:textColorHighlight="@color/blueish"
+                            android:textColorLink="@color/blueish"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:id="@+id/BMIWeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_weight="0.8"
+                            android:ems="10"
+                            android:fontFamily="@font/lato_italic"
+                            android:hint="Enter Weight"
+                            android:inputType="number"
+                            android:textAlignment="center"
+                            android:textColorLink="@color/blueish"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/BMIResult"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/lato_italic"
+                        android:text="Your BMI is.."
+                        android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:textColor="@color/md_blue_grey_800"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/BMI"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/lato_italic"
+                        android:text="Calculate BMI"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:cornerRadius="18dp" />
+
+                    <TextView
+                        android:id="@+id/Indication"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:fontFamily="@font/lato_italic"
+                        android:textAlignment="center"
+                        android:textColor="@color/md_blue_grey_800"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!--<androidx.cardview.widget.CardView
+                android:id="@+id/cardView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/CardView9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardView7">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_round_height_24" />
+
+                        <EditText
+                            android:id="@+id/HeightVal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="60dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:fontFamily="@font/lato_italic"
+                            android:hint="Height"
+                            android:inputType="number"
+                            android:textAlignment="textStart"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/SetHeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/lato_italic"
+                        android:text="Set Height"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold|italic"
+                        app:cornerRadius="18dp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/CardView11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView8"
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="15dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/ic_round_speed_24"
+                                app:srcCompat="@drawable/ic_round_speed_24" />
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/lato_italic"
+                                android:text="Weight"
+                                android:textAlignment="center"
+                                android:textColor="@color/blueish"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:layout_weight="1" />
+
+                        <EditText
+                            android:id="@+id/WeightVal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="40dp"
+                            android:layout_weight="0.5"
+                            android:ems="10"
+                            android:fontFamily="@font/lato_italic"
+                            android:hint="Weight"
+                            android:inputType="number"
+                            android:textAlignment="center"
+                            android:textColorHighlight="@color/blueish"
+                            android:textColorLink="@color/blueish"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/SetWeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="40dp"
+                        android:fontFamily="@font/lato_italic"
+                        android:text="Record"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:cornerRadius="18dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/CardView9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView9"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_outline_local_drink_24" />
+
+                        <TextView
+                            android:id="@+id/WaterGlasses"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/lato_italic"
+                            android:text="0 glass(es)"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/minus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="0.1"
+                            android:backgroundTint="@color/blueish"
+                            android:clickable="true"
+                            android:src="@drawable/ic_baseline_remove_24"
+                            app:backgroundTint="@android:color/transparent"
+                            app:elevation="0dp"
+                            app:pressedTranslationZ="0dp" />
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/plus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.1"
+                            android:backgroundTint="@color/blueish"
+                            android:clickable="true"
+                            android:src="@drawable/ic_baseline_add_24"
+                            app:backgroundTint="@android:color/transparent"
+                            app:elevation="0dp" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/SetWater"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/lato_italic"
+                        android:text="Record"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:cornerRadius="18dp" />
+
+                    <TextView
+                        android:id="@+id/tip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="30dp"
+                        android:fontFamily="@font/lato_italic"
+                        android:text="It's advisable that you drink 8 glasses (2L) of water a day."
+                        android:textAlignment="center"
+                        android:textColor="@color/md_blue_grey_800"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/cardView7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CardView9">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView10"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="15dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/ic_round_fastfood_24"
+                                app:srcCompat="@drawable/ic_round_fastfood_24" />
+
+                            <TextView
+                                android:id="@+id/textView7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/lato_italic"
+                                android:text="Food"
+                                android:textColor="@color/blueish"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"
+                            android:layout_weight="1" />
+
+                        <EditText
+                            android:id="@+id/Calories"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="40dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:fontFamily="@font/lato_italic"
+                            android:hint="Calories"
+                            android:inputType="number"
+                            android:textAlignment="center"
+                            android:textColorHighlight="@color/blueish"
+                            android:textColorLink="@color/blueish"
+                            android:textCursorDrawable="@color/blueish"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/SetCalories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="40dp"
+                        android:fontFamily="@font/lato_italic"
+                        android:text="Record"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:cornerRadius="18dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardView7">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="40dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView13"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_round_set_meal_24"
+                            app:srcCompat="@drawable/ic_round_set_meal_24" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/lato_italic"
+                            android:text="BMR and Caloric Needs"
+                            android:textColor="@color/blueish"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!--<TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="30dp"
+                        android:fontFamily="@font/lato_italic"
+                        android:text="Select Sex :"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/Sex"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="30dp">
+
+                        <RadioButton
+                            android:id="@+id/Female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:fontFamily="@font/lato"
+                            android:text="Female"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/Male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:fontFamily="@font/lato"
+                            android:text="Male"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </RadioGroup>-->
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_weight="0.5"
+                        android:fontFamily="@font/lato_italic"
+                        android:text="Select Your Activity Level :"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/Activity"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="30dp">
+
+                        <RadioButton
+                            android:id="@+id/Sedentary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:fontFamily="@font/lato"
+                            android:text="Sedentary"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/Active"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:fontFamily="@font/lato"
+                            android:text="Active"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/VeryActive"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:fontFamily="@font/lato"
+                            android:text="Very Active"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </RadioGroup>
+
+                    <!--  <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="30dp"
+                        android:fontFamily="@font/lato_italic"
+                        android:text="Set Your Age :"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/Age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="30dp"
+                        android:ems="10"
+                        android:fontFamily="@font/lato_italic"
+                        android:hint="Age"
+                        android:inputType="number"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />-->
+
+                    <Button
+                        android:id="@+id/CalBMR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:text="Calculate"
+                        app:cornerRadius="18dp" />
+
+                    <TextView
+                        android:id="@+id/BMR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/lato"
+                        android:textColor="@color/md_blue_grey_800"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
