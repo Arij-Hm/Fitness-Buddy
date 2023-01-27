@@ -50,9 +50,6 @@ width="200"
 <img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%209.jpg" width="200" hspace="10" vspace="10">
 <br>
 <br>
-<br>
-<br>
-<br>
 
 
 
