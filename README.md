@@ -30,10 +30,10 @@ width="200"
     hspace="10" vspace="10">
 <br>
 <br>
-<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%204.jpg" align="left"
+<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%204.jpg" 
 width="200"
     hspace="10" vspace="10">
-<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%205.jpg" align="center"
+<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%205.jpg"
 width="200"
     hspace="10" vspace="10">
 <img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%206.jpg"
