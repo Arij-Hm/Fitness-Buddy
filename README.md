@@ -29,25 +29,25 @@ width="200"
 width="200"
     hspace="10" vspace="10">]
 <br>
-[<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%204.jpg" align="center"
+<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%204.jpg" align="center"
 width="200"
-    hspace="10" vspace="10">]
-[<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%205.jpg" align="left"
+    hspace="10" vspace="10">
+<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%205.jpg" align="left"
 width="200"
-    hspace="10" vspace="10">]
-[<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%206.jpg" align="center"
+    hspace="10" vspace="10">
+<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%206.jpg" align="center"
 width="200"
-    hspace="10" vspace="10">]
+    hspace="10" vspace="10">
 <br>
-[<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%207.jpg" align="left"
+<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%207.jpg" align="left"
 width="200"
-    hspace="10" vspace="10">]
-[<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%208.jpg" align="center"
+    hspace="10" vspace="10">
+<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%208.jpg" align="center"
 width="200"
-    hspace="10" vspace="10">]
-[<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%209.jpg" align="left"
+    hspace="10" vspace="10">
+<img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%209.jpg" align="left"
 width="200"
-    hspace="10" vspace="10">]
+    hspace="10" vspace="10">
 
 ## Permissions
 
