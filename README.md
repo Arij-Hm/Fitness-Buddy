@@ -42,7 +42,7 @@ width="200"
 <br>
 <br>
 <img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%207.jpg"
-width="200" height="400"
+width="200" height="425"
     hspace="10" vspace="10">
 <img src="https://github.com/Arij-Hm/Trackini-Health-Tracker/blob/main/Screenshots/Fitness%20Buddy%208.jpg"
 width="200"
